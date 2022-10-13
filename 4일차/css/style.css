@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'GSL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GSM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GSB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 유전스타일 
+    font-family, color, line-height, letter-spacing, font-weight ....
+
+    - 인라인형 태그 - contents => 검색순위가 높음 , 언더웨어 태그(속어), 글자관련스타일 모두 먹힘=> text-center
+        Ex: h1~h6, span, strong, input, a, button, em, p, img, vided(iframe)
+        => 상하관련된 스타일은 안먹힘, 좌우는 먹는데
+    - 블럭형 태그 - 박스 => 검색 없음
+*/
+
+:root{
+    --color-active: red;
+    --color-base : #111111;
+    --title-b : 26px;
+    --title-s : 13px;
+    --content-s : 16px;
+}
+body{
+    font-family: 'GSL';
+}
+
+img{
+    width: 300px;
+  height: 150px;
+    object-fit: fill;
+}

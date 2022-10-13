@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4일차</title>
+
+    <style>
+        /* reset */
+        *{margin: 0; padding: 0;}
+        a{color: #222222; text-decoration: none;}
+        li, dt, dd{list-style: none;}
+
+        /* common */
+        .container{max-width: 1280px; margin: 0 auto;}
+        .rel{position: relative;}
+        .abs{position: absolute;}
+        .d-block{display: block;}
+        .d-flex{display: flex;}
+        .d-none{display: none;}
+        .justify-content-between{justify-content: space-between;} /* X축 */
+        .align-items-center{align-items: center;} /* Y축 */
+
+        /* layout */
+        #hd{ background-color : green;}
+        #hd a{ color: white;}
+        #hd h1 a{font-size: 3em;}
+        #gnb{margin-left: auto; } 
+        
+        /* li a (대메뉴)에 마우스가 올라갔을 때 노란색 배경 표시 */
+        #gnb li a{margin-left : 1em; transition: 0.5s;padding : 5px;}       
+        #gnb > li:hover > a{
+            border-radius: 5px; background-color: yellow; color: black;}
+
+        /* li a에 올렸을 때 ul(소메뉴리스트)을 표시 */
+        #gnb li ul{
+            border: 1px solid green;
+            background-color: white;
+            width: auto;
+            margin-left : 1em;
+            
+            height: 0;
+            transition: 0.5s;
+            overflow: hidden;
+            /* 넘치면 막는다 */
+        }
+        #gnb li:hover ul{height: 160px;}
+
+        #gnb ul a{color: black; display: block; font-size : 13px;}
+        
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">    
+</head>
+<body>
+    <header id="hd">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1><a href="">세계의 미술작품</a></h1>
+            <ul id="gnb" class="d-flex">
+                <li class="rel"><a href="">소장처벌</a>
+                <ul class="abs">
+                    <li><a href="">소메뉴1</a></li>
+                    <li><a href="">소메뉴2</a></li>
+                    <li><a href="">소메뉴3</a></li>
+                </ul> 
+                </li>                       
+                <!-- ul>abs>li*3>a{소메뉴$} -->
+                <li><a href="">장르별</a>                
+                <ul class="abs">
+                    <li><a href="">소메뉴1</a></li>
+                    <li><a href="">소메뉴2</a></li>
+                    <li><a href="">소메뉴3</a></li>
+                </ul> 
+                </li>
+                <li><a href="">테마별</a>
+                    <ul class="abs">
+                        <li><a href="">소메뉴1</a></li>
+                        <li><a href="">소메뉴2</a></li>
+                        <li><a href="">소메뉴3</a></li>
+                    </ul> 
+                </li>
+                <li><a href="">시대별</a>
+                    <ul class="abs">
+                        <li><a href="">소메뉴1</a></li>
+                        <li><a href="">소메뉴2</a></li>
+                        <li><a href="">소메뉴3</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* 지마켓폰트가져오기 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Default 스타일(폰트 ...) 변경 */
+*{
+    font-family: 'Montserrat', 'GmarketSansMedium', sans-serif !important;
+    font-weight: 300;
+}
+
+.d-none{ display: none !important;}
+.h0 { height: 0 !important; overflow:  hidden !important;
+      padding: 0 !important; margin: 0 !important;
+}
+.navbar-inverse {
+    background-color: #f3482e;
+}
+
+.pl-5{padding-left: 5rem;}
+
+#mainBanner{
+    background-image: url('../img/main/햇반.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-height: 717px; /* 실픽셀 사이즈로 max height 잡아주기 */
+    height: 0; padding-top: 60%;
+    background-color: #fdedd3;
+}
+
+#adBanner{
+    background-image: url(../img/main/bg_no_text.jpg);
+    background-repeat: no-repeat;
+    background-color: #fc7301;
+    background-position: center bottom;
+    background-size: 100% auto;
+}
+aside.cta-quote{
+    padding: 50px 0 80vw;
+}
+
+@media(min-width: 768px){
+    aside.cta-quote{
+        padding: 100px 0;
+    }
+
+    #adBanner{
+        background-position: right center;
+        background-size: auto 450px;
+    }
+}
+
+@media(min-width:992px){
+    #mainBanner{
+        /* background-size: auto calc(100% - 3rem); */
+        background-size: contain;
+        height: 700px;
+        padding-top: 0;
+    }
+}
+
+
+/*  미디어 쿼리 안에 있는 조건문에 의해 아래 내용 실행 * 992는 lg 버전
+    mainbanner가 
+*/
+

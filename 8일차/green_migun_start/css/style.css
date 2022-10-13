@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'GSL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'GSL';
+}
+
+.container { width:1200px; margin:0 auto }
+.rel{ position:relative }
+.abs { position:absolute }
+.fixed { position: fixed }
+
+.d-flex { display:flex }
+.d-block{ display: block }
+.justify-content-between{ justify-content: space-between;}
+.align-items-center{ align-items: center;}
+
+.text-center{ text-align: center;}
+.text-left{ text-align: left;}
+.text-right{ text-align: right;}
+
+
+:root{
+    --color-active: red;
+    --color-base : #111111;
+    --title-b : 26px;
+    --title-s : 13px;
+    --content-s : 16px;
+}
+
+h3>a:first-child{
+    font-size: var(--title-b);
+    font-weight: bold;
+}
+
+h3>a:last-child{
+    font-size: var(--title-s);
+}
+ 
+li{
+    list-style: none;
+}

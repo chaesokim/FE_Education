@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 스타일 선택자들</title>
+    <style>
+        /* reset */
+        *{margin: 0; padding: 0;}
+        a{color: #222222; text-decoration: none;}
+        li, dt, dd{list-style: none;}
+
+        /* common */
+        .container{max-width: 1200px; margin: 0 auto;}
+        .rel{position: relative;}
+        .abs{position: absolute;}
+        .d-block{display: block;}
+        .d-flex{isolation: flex;}
+        .d-none{display: none;}
+
+        /* layout */
+        
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">    
+</head>
+<body>
+    <!-- .titleBox>strong+h2+a>span*3 -->
+    <div class="titleBox">
+        <strong>그 다음으로 중요(작은타이틀)</strong>
+        <h2>이게 더 중요한 타이틀</h2>
+        <a href="">
+            <span>더보기</span>
+            <span>→</span>
+            <span</span>
+        </a>
+    </div>
+    <script src="./js/common.js?worker=uni&w_date=0922"></script>
+</body>
+</html>

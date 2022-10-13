@@ -1,0 +1,14 @@
+*{ margin: 0; padding: 0;}
+.container{ width:1080px; margin:0 auto;}
+
+#hd{ border-bottom:1px solid #222;}
+#hd .container{
+    justify-content: space-between; 
+    /* X축 */
+    align-items : center;}
+    /* Y축 */
+
+#hd .container,
+#gnd{
+    display: flex;
+}

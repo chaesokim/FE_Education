@@ -1,0 +1,38 @@
+/* 웹기능사용 리셋*/
+*{margin: 0; padding: 0;}
+a{color: black; text-decoration: none;}
+li{list-style: none;}
+
+/* 폰트 소스 */
+@font-face {
+    font-family: 'GSL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 공통 클래스 절대절대 수정하면 안됨 */
+.container{width:1200px; margin:0 auto; background-color: black;}
+.rel{position : relative;}
+.abs{position : absolute;}
+.fixed{position: fixed;}
+
+.d-flex{display:flex;}
+.d-block{display: block;}
+.justify-content-between{justify-content: space-between;}
+.align-items-center{align-items: center;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;} 
+
+#gallery {width:100%; background-color: green;}
+#gallery li{ width:25%; text-align: center;}
+
+#gnb a{
+    color: white; 
+    font-size: 15px;   
+    padding: 1rem 1rem;
+}
+

@@ -1,0 +1,42 @@
+/* 웹기능사용 리셋*/
+*{margin: 0; padding: 0;}
+a{color: black; text-decoration: none;}
+li{list-style: none;}
+
+/* 절대절대 수정하면 안됨 */
+.container{width:1200px; margin:0 auto;}
+.rel{position : relative;}
+.abs{position : absolute;}
+.fixed{position: fixed;}
+
+.d-flex{display:flex;}
+.d-block{display: block;}
+.justify-content-between{justify-content: space-between;}
+.align-items-center{align-items: center;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+/* 계산한다 내 크기의 100%에서 10px 작게 */
+#hd img{width: calc(100% - 1rem);}
+
+#hd img:last-child, h1:hover img:first-child{display: none;}
+#hd h1:hover img:last-child{display: block;}
+
+#hd {background-color: black; padding: 10px;}
+
+#gnb a{display: block;}
+#gnb .d1{
+    color: white;
+    font-size: 2em;   
+}
+#gnb .d2{
+    background-color: white;
+    line-height : 2;  
+}
+
+
+
+
+

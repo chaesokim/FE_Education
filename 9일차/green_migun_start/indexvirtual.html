@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본기능</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        ul{display: flex; 
+            width: 100%; justify-content: center;
+            font-size: 3rem; line-height: 2;
+            height: 100vh; align-items: center;
+        }
+        li {margin: 0 2rem; position: relative;} 
+        /* 얘가 li 사이 여백 넣어주는 것 */
+        li a{text-decoration: none;}
+        li::after{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0; right: 0;
+            margin: auto;
+            width: 0;
+            bottom: 0;
+            height: 3px;
+            background: black;
+            transition: 0.5s;
+        }
+
+        li:hover:after{
+            width: 100%;
+        }
+
+        li:hover a{
+            color: black;
+        }
+            
+        .naver a{color: red;}
+        .daum a{color: blueviolet;}
+        .google a{color: yellowgreen;}
+
+        .naver:after{background: blue;}
+        .daum:after{background: yellow;}
+        .google:after{background: violet;}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="naver"><a href="">네이버</a></li>
+        <li class="daum"><a href="">다음</a></li>
+        <li class="google"><a href="">구글</a></li>
+    </ul>
+    
+</body>
+</html>
