@@ -1,0 +1,9 @@
+BODY {
+  color: red;
+}
+BODY h1 {
+  display: inline-block;
+}
+BODY h1::after {
+  content: "";
+}

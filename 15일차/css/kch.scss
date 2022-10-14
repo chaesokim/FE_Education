@@ -1,0 +1,10 @@
+BODY{
+    color: red;
+    h1{
+        display: inline-block;
+        &::after{
+            content: "";
+        }
+    }
+
+}
